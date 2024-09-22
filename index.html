@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,5 +32,56 @@
       };
     </script>
   </head>
-  <body></body>
+  <body class="m-0 p-0">
+    <header class="sticky z-50 top-0 w-full">
+      <nav class="bg-yellow-50 py-4">
+        <div class="navbar container mx-auto bg-base-500">
+          <div class="navbar-start">
+            <a class="btn bg-green-300 text-xl">Blog</a>
+          </div>
+          <div
+            class="navbar-center btn btn-ghost hidden lg:flex items-center gap-2"
+          >
+            <div class="logo">
+              <img src="./assets/logo.png" alt="" />
+            </div>
+            <div class="name">
+              <h1 class="text-xl font-bold">Donation</h1>
+            </div>
+          </div>
+          <div class="navbar-end flex items-center gap-2">
+            <div class="coin">
+              <img src="./assets/coin.png" alt="" />
+            </div>
+            <div class="amount text-xl font-bold">
+              <p><span>7000</span> BDT</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section class="banner bg-white">
+        <div class="container mx-auto">
+          <div
+            class="banner-content flex justify-center items-center gap-10 p-5"
+          >
+            <button
+              class="btn btn-ghost text-xl border-1 border-gray-400 bg-green-300"
+            >
+              Donation
+            </button>
+            <button class="btn btn-ghost text-xl border-1 border-gray-400">
+              History
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- donation cards -->
+      <section class="container mx-auto donation-cards">
+        <div class="cards-container"></div>
+      </section>
+    </main>
+  </body>
 </html>
