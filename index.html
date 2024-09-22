@@ -32,12 +32,16 @@
       };
     </script>
   </head>
-  <body class="m-0 p-0">
+  <body class="m-0 p-0 font-lexend">
     <header class="sticky z-50 top-0 w-full">
       <nav class="bg-[#F9F7F3] py-4">
         <div class="navbar container mx-auto bg-base-500">
           <div class="navbar-start">
-            <a class="btn bg-green-300 hover:bg-green-400 text-xl">Blog</a>
+            <a
+              href="./blog.html"
+              class="btn bg-green-300 hover:bg-green-400 text-xl"
+              >Blog</a
+            >
           </div>
           <div
             class="navbar-center btn btn-ghost hover:bg-green-300 hidden lg:flex items-center gap-2"
@@ -64,7 +68,7 @@
         </div>
       </nav>
       <!-- banner section -->
-      <section class="banner bg-white">
+      <section class="banner bg-white border-b-2 border-gray-200 py-4">
         <div class="container mx-auto">
           <div
             class="banner-content flex justify-center items-center gap-10 p-5"
@@ -121,9 +125,25 @@
               />
               <button
                 class="btn text-xl font-bold bg-green-300 hover:bg-green-400 w-full"
+                onclick="my_modal_3.showModal()"
               >
                 Donate Now
               </button>
+              <dialog id="my_modal_3" class="modal">
+                <div class="modal-box w-11/12 max-w-5x text-center">
+                  <h3 class="text-3xl font-bold">Congrats!!</h3>
+                  <img class="mx-auto mt-3" src="./assets/coin.png" alt="" />
+                  <p class="py-4 text-xl">
+                    You Have Donated For Flood Relief in Noakhali
+                    <span class="font-bold text-2xl">Successfully</span>
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close Confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
           <!-- card 2 -->
@@ -162,9 +182,25 @@
               />
               <button
                 class="btn text-xl font-bold bg-green-300 hover:bg-green-400 w-full"
+                onclick="my_modal_4.showModal()"
               >
                 Donate Now
               </button>
+              <dialog id="my_modal_4" class="modal">
+                <div class="modal-box w-11/12 max-w-5x text-center">
+                  <h3 class="text-3xl font-bold">Congrats!!</h3>
+                  <img class="mx-auto mt-3" src="./assets/coin.png" alt="" />
+                  <p class="py-4 text-xl">
+                    You Have Donated For Flood Relief in Feni
+                    <span class="font-bold text-2xl">Successfully</span>
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close Confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
           <!-- card 3 -->
@@ -202,9 +238,25 @@
               />
               <button
                 class="btn text-xl font-bold bg-green-300 hover:bg-green-400 w-full"
+                onclick="my_modal_2.showModal()"
               >
                 Donate Now
               </button>
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box w-11/12 max-w-5x text-center">
+                  <h3 class="text-3xl font-bold">Congrats!!</h3>
+                  <img class="mx-auto mt-3" src="./assets/coin.png" alt="" />
+                  <p class="py-4 text-xl">
+                    You Have Donated For Injured People in Quota Movement
+                    <span class="font-bold text-2xl">Successfully</span>
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close Confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>

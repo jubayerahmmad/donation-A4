@@ -32,5 +32,128 @@
       };
     </script>
   </head>
-  <body></body>
+  <body class="font-lexend">
+    <header>
+      <nav class="bg-[#F9F7F3] py-4">
+        <div class="navbar container mx-auto bg-base-500">
+          <div class="navbar-start">
+            <a
+              href="./index.html"
+              class="btn bg-green-300 hover:bg-green-400 text-xl"
+              >Home</a
+            >
+          </div>
+          <div
+            class="navbar-center btn btn-ghost hover:bg-green-300 hidden lg:flex items-center gap-2"
+          >
+            <div class="logo">
+              <img src="./assets/logo.png" alt="" />
+            </div>
+            <div class="name">
+              <h1 class="text-xl font-bold">SolidarityFund</h1>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div
+              class="flex items-center gap-2 p-2 rounded-lg border-2 border-gray-200"
+            >
+              <div class="coin">
+                <img src="./assets/coin.png" alt="" />
+              </div>
+              <div class="amount text-xl font-bold">
+                <p><span> 7000</span> BDT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="important-faq">
+        <div class="container mx-auto px-5 lg:px-0">
+          <div class="faq-title mt-5">
+            <h1 class="text-4xl lg:text-5xl font-bold">Important FAQs</h1>
+          </div>
+          <div class="faq-content mt-10">
+            <div class="join join-vertical w-full">
+              <div
+                class="collapse collapse-arrow join-item border-base-300 border"
+              >
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-2xl lg:text-3xl font-medium">
+                  What is Document Object Model?
+                </div>
+                <div class="collapse-content">
+                  <p class="text-md lg:text-xl text-gray-500 py-4">
+                    The Document Object Model (DOM) is a programming interface
+                    for HTML and XML documents. It represents the page so that
+                    programs can change the document structure, style, and
+                    content. The DOM represents the document as nodes and
+                    objects. It can be used to navigate the document, modify its
+                    content, and add interactivity to web pages.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="collapse collapse-arrow join-item border-base-300 border"
+              >
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-2xl lg:text-3xl font-medium">
+                  How do you select an HTML element using DOM?
+                </div>
+                <div class="collapse-content">
+                  <p class="text-md lg:text-xl text-gray-500 py-4">
+                    To select an HTML element using the DOM, you can use the
+                    document.getElementById() method, which selects an element
+                    by its ID. You can also use
+                    document.getElementsByClassName() to select elements by
+                    their class name, or document.querySelector() to select the
+                    first element that matches a CSS selector.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="collapse collapse-arrow join-item border-base-300 border"
+              >
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-2xl lg:text-3xl font-medium">
+                  What is event delegation in the context of the DOM, and why is
+                  it useful?
+                </div>
+                <div class="collapse-content">
+                  <p class="text-md lg:text-xl text-gray-500 py-4">
+                    Event delegation is a technique in the context of the DOM
+                    where a single event listener is added to a parent element
+                    instead of being added to each individual child element. It
+                    is useful because it reduces the number of event listeners
+                    on the page, which can improve performance and reduce memory
+                    usage.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="collapse collapse-arrow join-item border-base-300 border"
+              >
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-2xl lg:text-3xl font-medium">
+                  How do you manipulate an element's attributes and styles using
+                  the DOM?
+                </div>
+                <div class="collapse-content">
+                  <p class="text-md lg:text-xl text-gray-500 py-4">
+                    To manipulate an element's attributes and styles using the
+                    DOM, you can use methods such as setAttribute() to set an
+                    attribute, getAttribute() to get an attribute, and
+                    removeAttribute() to remove an attribute. To change an
+                    element's style, you can use the style property, which
+                    allows you to set the element's CSS properties.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
