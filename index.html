@@ -37,9 +37,7 @@
       <nav class="bg-[#F9F7F3] py-4">
         <div class="navbar container mx-auto bg-base-500">
           <div class="navbar-start">
-            <a
-              href="./blog.html"
-              class="btn bg-green-300 hover:bg-green-400 text-xl"
+            <a id="blog-btn" class="btn bg-green-300 hover:bg-green-400 text-xl"
               >Blog</a
             >
           </div>
@@ -74,11 +72,15 @@
             class="banner-content flex justify-center items-center gap-10 p-5"
           >
             <button
+              id="donation-btn"
               class="btn btn-ghost text-xl border-1 border-gray-400 bg-green-300 hover:bg-green-400"
             >
               Donation
             </button>
-            <button class="btn btn-ghost text-xl border-1 border-gray-400">
+            <button
+              id="history-btn"
+              class="btn btn-ghost text-xl border-1 border-gray-400"
+            >
               History
             </button>
           </div>
@@ -88,7 +90,10 @@
     <main class="mb-16">
       <!-- donation cards -->
       <section class="container mx-auto donation-cards">
-        <div class="cards-container mt-10 space-y-6 p-6 lg:p-0">
+        <div
+          id="cards-container"
+          class="cards-container mt-10 space-y-6 p-6 lg:p-0"
+        >
           <!-- card 1 -->
           <div
             class="lg:flex justify-evenly p-4 rounded-xl border-2 border-gray-200 gap-4 space-y-2 lg:space-y-0"
@@ -107,7 +112,7 @@
                   <p><span id="noakhali-amount">0</span> BDT</p>
                 </div>
               </div>
-              <p class="text-2xl font-bold">
+              <p id="noakhali-title" class="text-2xl font-bold">
                 Donate for Flood at Noakhali, Bangladesh
               </p>
               <p class="text-lg text-gray-500">
@@ -165,7 +170,7 @@
                   <p><span id="feni-amount">250</span> BDT</p>
                 </div>
               </div>
-              <p class="text-2xl font-bold">
+              <p id="feni-title" class="text-2xl font-bold">
                 Donate for Flood Relief in Feni,Bangladesh
               </p>
               <p class="text-lg text-gray-500">
@@ -223,7 +228,7 @@
                   <p><span id="quota-amount">100</span> BDT</p>
                 </div>
               </div>
-              <p class="text-2xl font-bold">
+              <p id="quota-title" class="text-2xl font-bold">
                 Aid for Injured in the Quota Movement
               </p>
               <p class="text-lg text-gray-500">
@@ -264,8 +269,17 @@
           </div>
         </div>
       </section>
+      <!-- history section -->
+
+      <div
+        id="history-section"
+        class="hidden my-2 p-4 mx-auto container rounded-lg shadow-sm border border-green-200"
+      >
+        <h3 class="text-2xl font-bold mb-4 text-center">Donation History</h3>
+        <div id="history-list" class="grid grid-cols-2 gap-3"></div>
+      </div>
     </main>
-    <footer class="bg-[#F9F7F3] py-4 h-40"></footer>
+    <footer id="footer" class="bg-[#F9F7F3] py-4 h-40"></footer>
     <script src="./js/index.js"></script>
   </body>
 </html>
