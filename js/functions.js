@@ -37,7 +37,13 @@ function addDonationToHistory(amount, title) {
   );
   div.innerHTML = `
       <h1 class="text-xl font-semibold">${amount} BDT is Donated for ${title}</h1>
-      <p class="text-sm">Date: ${new Date().toLocaleDateString()}</p>
+      <p class="text-sm">Date: ${new Date().toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+      })}</p>
     `;
   document.getElementById("history-section").appendChild(div);
 }
