@@ -36,7 +36,7 @@ function addDonationToHistory(amount, title) {
     "rounded-xl"
   );
   div.innerHTML = `
-      <h1 class="text-xl font-semibold">${amount} BDT is Donated for ${title}</h1>
+      <h3 class="text-xl font-semibold">${amount} BDT is Donated for ${title}</h3>
       <p class="text-sm">Date: ${new Date().toLocaleDateString("en-US", {
         month: "long",
         day: "numeric",
